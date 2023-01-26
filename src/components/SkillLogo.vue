@@ -1,5 +1,10 @@
 <template>
-  <div class="relative SkillsLogo" ref="SkillsLogo">
+  <div
+    data-aos="flip-up"
+    data-aos-delay="500"
+    class="relative SkillsLogo"
+    ref="SkillsLogo"
+  >
     <slot></slot>
     <slot></slot>
 
