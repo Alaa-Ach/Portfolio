@@ -214,14 +214,12 @@
 <script>
 // @ is an alias to /src
 import HelloWorld from "@/components/HelloWorld.vue";
-import Typewriter from "typewriter-vue";
 import SkillLogo from "@/components/SkillLogo.vue";
 
 export default {
   name: "HomeView",
   components: {
     SkillLogo,
-    Typewriter,
   },
   data() {
     return {};
