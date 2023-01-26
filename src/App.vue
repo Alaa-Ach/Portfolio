@@ -153,13 +153,6 @@ export default {
     };
   },
   mounted() {},
-  watch: {
-    "$route.path": {
-      handler: function (search) {
-        console.log(search);
-      },
-    },
-  },
 };
 </script>
 

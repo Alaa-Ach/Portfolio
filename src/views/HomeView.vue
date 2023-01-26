@@ -5,7 +5,6 @@
     <!-- Dec & Img -->
     <div class="flex flex-col md:flex-row place-items-center py-5">
       <div
-        v-motion-slide-visible-left
         class="
           rounded-full
           w-80
@@ -31,11 +30,11 @@
           flex flex-wrap flex-1
           font-bold font-sans
         "
-        v-motion-slide-visible-left
       >
         <div>
           I'm Alaa Achouairi,
-          <typewriter typeInterval="80" startDelay="5000" ref="typewriter">
+
+          <typewriter :type-interval="50">
             <div class="text-xl">
               Developer ,I Hate Design , In Love With Back-End Crushing on
               Front-End
@@ -44,9 +43,11 @@
         </div>
       </div>
     </div>
+
     <!-- Skills -->
     <div class="bg-gray-400 text-[#1c1c1c] py-5 text-center px-5">
       <div class="text-4xl font-sans font-semibold mb-5">SKILLS :</div>
+
       <div class="flex space-x-5 justify-center items-start flex-wrap flex-row">
         <SkillLogo>
           <svg viewBox="0 0 128 128">
@@ -215,20 +216,17 @@
 // @ is an alias to /src
 import HelloWorld from "@/components/HelloWorld.vue";
 import SkillLogo from "@/components/SkillLogo.vue";
+import Typewriter from "@/components/Typewriter.vue";
 
 export default {
   name: "HomeView",
   components: {
     SkillLogo,
-  },
-  data() {
-    return {};
+    Typewriter,
   },
 
-  methods: {
-    onhover(event) {
-      event.target.classList.toggle("colored");
-    },
+  data() {
+    return {};
   },
 };
 </script>
