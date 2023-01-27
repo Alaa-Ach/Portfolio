@@ -1,10 +1,5 @@
 <template>
-  <div
-    data-aos="flip-up"
-    data-aos-delay="500"
-    class="relative SkillsLogo"
-    ref="SkillsLogo"
-  >
+  <div class="relative SkillsLogo" ref="SkillsLogo">
     <slot></slot>
     <slot></slot>
 
@@ -25,6 +20,7 @@ export default {
   name: "SkillLogo",
 
   mounted() {
+    // console.log(this.$refs.SkillsLogo.children[1]);
     this.$refs.SkillsLogo.children[0].classList.add("backLogo");
     this.$refs.SkillsLogo.children[1].classList.add("relative");
   },
