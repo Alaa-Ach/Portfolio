@@ -9,9 +9,9 @@ const routes = [
     component: HomeView
   },
   {
-  path:'/contact',
-  name:'contact',
-  component: ContactView
+    path: '/contact',
+    name: 'contact',
+    component: ContactView
   },
   {
     path: '/about',
